@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Joyas & Accesorios Iris</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pagina3.css"> 
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="imagenes/logo.jpg" alt="Logo de Joyas y Accesorios Iris" class="logo-img">
+        <span class="nombre-marca">JOYAS Y ACCESORIOS IRIS</span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a> 
+        <a href="pagina2.html">Colecciones</a> 
+        <a href="pagina3.html" class="activo">Servicios</a> 
+        <a href="pagina4.html">Contacto</a> 
+    </nav>
+</header>
+
+<main id="servicios-page"> 
+
+    <section id="ofertas-especiales" class="seccion-clara seccion-fondo-dorado">
+        <h2 class="titulo-seccion-dorado">OFERTAS ESPECIALES</h2>
+
+        <div class="servicio-card-wide">
+            <div class="servicio-img-contenedor">
+                <img src="imagenes/pagina3/1.jpg" alt="Juego de Collar y Pendientes en oferta">
+            </div>
+            <div class="servicio-info-contenedor">
+                <p>Aprovecha nuestros precios exclusivos en juegos de joyería seleccionados y sets de regalo. Ideales para eventos o bodas. ¡Ofertas limitadas por tiempo!</p>
+                <a href="#" class="cta-btn btn-dorado-oscuro">Contactanos para tu pedido</a>
+            </div>
+        </div>
+
+        <div class="servicio-card-wide tarjeta-inversa">
+            <div class="servicio-info-contenedor">
+                <p>Descubre nuestra promoción exclusiva en anillos de compromiso, collares de oro y puntos de diamantes. Diseño y calidad garantizada.</p>
+                <a href="#" class="cta-btn btn-dorado-oscuro">Contactanos para tu pedido</a>
+            </div>
+            <div class="servicio-img-contenedor">
+                <img src="imagenes/pagina3/2" alt="Conjunto de anillos y pulseras en oferta">
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="personalizada" class="seccion-clara seccion-fondo-verde">
+        <h2 class="titulo-seccion-claro">JOYERÍA PERSONALIZADA</h2>
+
+        <div class="servicio-card-mini">
+            <div class="servicio-img-contenedor-mini">
+                <img src="imagenes/servicios/personalizada-1.jpg" alt="Artesano joyero trabajando">
+            </div>
+            <div class="servicio-info-contenedor-mini">
+                <p>Diseñamos piezas únicas desde cero, siguiendo tus ideas y bocetos. Desde anillos de compromiso hasta piezas de alta costura.</p>
+                <a href="#" class="cta-btn btn-dorado-verde">Contactanos para tu pedido</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reparacion-limpieza" class="seccion-fondo-gris">
+        <h2 class="titulo-seccion-gris">REPARACIÓN Y LIMPIEZA</h2>
+        
+        <div class="servicio-card-mini tarjeta-inversa">
+            <div class="servicio-info-contenedor-mini">
+                <p>Devuelve el brillo a tus joyas antiguas. Ofrecemos servicios profesionales de limpieza profunda, pulido y reparación de cierres y engastes.</p>
+                <a href="#" class="cta-btn btn-dorado-gris">Contactanos para tu pedido</a>
+            </div>
+            <div class="servicio-img-contenedor-mini">
+                <img src="imagenes/servicios/reparacion-1.jpg" alt="Manos reparando una joya">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="seccion-negra">
+    <div class="social-links-footer">
+        <a href="https://www.facebook.com/share/1BUuaXq4yy/" target="_blank" aria-label="Facebook">📘</a>
+        <a href="https://wa.me/qr/MUEAEV7M62VQM1" target="_blank" aria-label="WhatsApp">💬</a>
+        <a href="https://www.tiktok.com/@joyas_y_accesorios_iris?_r=1&_t=ZS-91bqcvJUgFe" target="_blank" aria-label="TikTok">🎵</a>
+    </div>
+</footer>
+
+<script src="main.js"></script> 
+<div id="carrito-sidebar" class="carrito-sidebar">
+    <div class="carrito-header">
+        <h3 class="titulo-bolsita">TU BOLSITA</h3>
+        <span id="cerrar-carrito" class="cerrar-btn">&times;</span>
+    </div>
+    <div id="productos-carrito" class="productos-carrito-lista"></div>
+    <div class="carrito-footer">
+        <div class="total-estimado">
+            <span class="label">Total Estimado</span>
+            <span id="carrito-total">$0.00</span>
+        </div>
+        <a href="#" id="reservar-whatsapp-btn" class="cta-btn whatsapp-btn-final">
+            💬 RESERVAR POR WHATSAPP
+        </a>
+    </div>
+</div>
+<div id="notificacion-carrito" class="notificacion-carrito">
+    Producto: <strong id="prod-anadido-nombre"></strong> añadido.
+</div>
+<div id="abrir-carrito-btn" class="carrito-flotante-btn">🛒</div>
+
+</body>
+</html>

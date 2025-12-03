@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones | Joyas & Accesorios Iris</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap">
+    <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="pagina2.css"> 
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="imagenes/logo.jpg" alt="Logo de Joyas y Accesorios Iris" class="logo-img">
+        <span class="nombre-marca">JOYAS Y ACCESORIOS IRIS</span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a> 
+        <a href="pagina2.html" class="activo">Colecciones</a> 
+        <a href="pagina3.html">Tienda</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<section id="colecciones-page" class="seccion">
+    
+    <h2 class="titulo-coleccion">NUESTRAS COLECCIONES</h2>
+    
+    <div class="coleccion-contenedor">
+        
+        <div class="categorias-columna">
+            <h3>CATEGORÍAS</h3>
+            <nav class="categorias-nav">
+                <a href="#" class="cat-link activo">Joyería para mujeres de vestido</a>
+                <a href="#" class="cat-link">Joyería para mujeres de oficina</a>
+                <a href="#" class="cat-link">Joyería para varones</a>
+                <a href="#" class="cat-link">Joyería para niños y niñas</a>
+            </nav>
+        </div>
+        
+        <div class="productos-coleccion-columna">
+            
+            <p class="subtitulo-categoria">Joyería para mujeres de vestido</p>
+            
+            <div class="coleccion-grid">
+                
+                <div class="producto-card-coleccion">
+                    <img src="imagenes/pagina2/1.jpg" alt="Producto 1">
+                    <a href="#" class="descripcion-btn btn-dorado">DESCRIPCIÓN DEL PRODUCTO</a>
+                </div>
+                
+                <div class="producto-card-coleccion">
+                    <img src="imagenes/pagina2/2.jpg" alt="Producto 2">
+                    <a href="#" class="descripcion-btn btn-verde">DESCRIPCIÓN DEL PRODUCTO</a>
+                </div>
+                
+                <div class="producto-card-coleccion">
+                    <img src="imagenes/pagina2/3.jpg" alt="Producto 3">
+                    <a href="#" class="descripcion-btn btn-dorado">DESCRIPCIÓN DEL PRODUCTO</a>
+                </div>
+                
+                <div class="producto-card-coleccion">
+                    <img src="imagenes/pagina2/4.jpg" alt="Producto 4">
+                    <a href="#" class="descripcion-btn btn-verde">DESCRIPCIÓN DEL PRODUCTO</a>
+                </div>
+                
+                <div class="producto-card-coleccion">
+                    <img src="imagenes/pagina2/5.jpg" alt="Producto 5">
+                    <a href="#" class="descripcion-btn btn-dorado">DESCRIPCIÓN DEL PRODUCTO</a>
+                </div>
+                
+                <div class="producto-card-coleccion">
+                    <img src="imagenes/pagina2/6.jpg" alt="Producto 6">
+                    <a href="#" class="descripcion-btn btn-verde">DESCRIPCIÓN DEL PRODUCTO</a>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<footer class="seccion-negra">
+    <div class="social-links-footer">
+        <a href="https://www.facebook.com/share/1BUuaXq4yy/" target="_blank" aria-label="Facebook">📘</a>
+        <a href="https://wa.me/qr/MUEAEV7M62VQM1" target="_blank" aria-label="WhatsApp">💬</a>
+        <a href="https://www.tiktok.com/@joyas_y_accesorios_iris?_r=1&_t=ZS-91bqcvJUgFe" target="_blank" aria-label="TikTok">🎵</a>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/TU_PROPIO_CODIGO.js" crossorigin="anonymous"></script> 
+<div id="carrito-sidebar" class="carrito-sidebar">
+    <div class="carrito-header">
+        <h3 class="titulo-bolsita">TU BOLSITA</h3>
+        <span id="cerrar-carrito" class="cerrar-btn">&times;</span>
+    </div>
+
+    <div id="productos-carrito" class="productos-carrito-lista">
+        <p class="carrito-vacio-msg">El carrito está vacío.</p>
+    </div>
+
+    <div class="carrito-footer">
+        <div class="total-estimado">
+            <span class="label">Total Estimado</span>
+            <span id="carrito-total">$0.00</span>
+        </div>
+        
+        <a href="#" id="reservar-whatsapp-btn" class="cta-btn whatsapp-btn-final">
+            💬 RESERVAR POR WHATSAPP
+        </a>
+    </div>
+</div>
+
+<div id="notificacion-carrito" class="notificacion-carrito">
+    Producto: <strong id="prod-anadido-nombre"></strong> añadido.
+</div>
+
+<div id="abrir-carrito-btn" class="carrito-flotante-btn">🛒</div>
+
+<script src="main.js"></script>
+</body>
+</html>
