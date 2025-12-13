@@ -1,171 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyas & Accesorios | Interactive Scroll</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap">
-    <link rel="stylesheet" href="styles.css">
-    </head>
-<body>
-
-<header class="header">
-    <div class="logo">
-        <img src="imagenes/logo.jpg" alt="Logo de Joyas y Accesorios Iris" class="logo-img">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="imagenes/logo.jpg"
+          alt="Logo de Joyas y Accesorios Iris"
+          class="logo-img"
+        />
         <span class="nombre-marca">JOYAS Y ACCESORIOS IRIS</span>
-    </div>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="pagina2.html">Colecciones</a> 
-    <a href="pagina3.html">Servicios</a>
-    <a href="#">Contacto</a>
-</nav>
-</header>
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pagina2.html">Colecciones</a>
+        <a href="pagina3.html">Servicios</a>
+        <a href="pagina4.html">Contacto</a>
+      </nav>
+    </header>
 
-<section id="hero" class="seccion seccion-clara">
-    <div class="hero-grid">
+    <section id="hero" class="seccion seccion-clara">
+      <div class="hero-grid">
         <div class="hero-texto">
-            <h1>Elegancia en <span class="destacado-dorado">Todo Detalle</span></h1>
-            <p>Descubre nuestra nueva colección de joyas artesanales que combinan tradición y diseño contemporáneo. La excelencia en cada pieza.</p>
-            <a href="#" class="cta-btn">Explorar Colección</a>
+          <h1>
+            Elegancia en <span class="destacado-dorado">Todo Detalle</span>
+          </h1>
+          <p>
+            Descubre nuestra nueva colección de joyas artesanales que combinan
+            tradición y diseño contemporáneo. La excelencia en cada pieza.
+          </p>
+          <a href="pagina2.html" class="cta-btn">Explorar Colección</a>
         </div>
         <div class="hero-imagen-cont">
-            <img src="imagenes/pagina1/1.jpg" alt="Anillos y relojes" class="hero-imagen hero-img-1">
+          <img
+            src="imagenes/pagina1/1.jpg"
+            alt="Anillos y relojes"
+            class="hero-imagen hero-img-1"
+          />
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="novedades" class="seccion seccion-clara">
-    
-    <div class="novedades-white-content"> 
-        
-        <h2 class="titulo-seccion">NOVEDADES</h2> 
-        
+    <section id="novedades" class="seccion seccion-clara">
+      <div class="novedades-white-content">
+        <h2 class="titulo-seccion">NOVEDADES</h2>
+
         <div class="novedad-contenido">
-            
-            <div class="novedad-texto">
-                <p>Explora nuestras últimas creaciones, diseñadas con maestría y pasión. Cada pieza cuenta una historia única de elegancia atemporal y sofisticación. Descubre joyas que combinan tradición artesanal con diseño contemporáneo, perfectas para momentos especiales o para realzar tu estilo diario con un toque de distinción.</p>
+          <div class="novedad-texto">
+            <p>
+              Explora nuestras últimas creaciones, diseñadas con maestría y
+              pasión. Cada pieza cuenta una historia única de elegancia
+              atemporal y sofisticación. Descubre joyas que combinan tradición
+              artesanal con diseño contemporáneo, perfectas para momentos
+              especiales o para realzar tu estilo diario con un toque de
+              distinción.
+            </p>
+          </div>
+
+          <div class="novedad-carrusel-cont">
+            <img
+              src="imagenes/pagina1/2.jpg"
+              alt="Anillo de esmeralda"
+              class="novedad-carrusel-img"
+            />
+
+            <div class="carousel-nav-buttons">
+              <button class="carousel-arrow prev-arrow">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-arrow next-arrow">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
-            
-            <div class="novedad-carrusel-cont">
-                <img src="imagenes/pagina1/2.jpg" alt="Anillo de esmeralda" class="novedad-carrusel-img">
-                
-                <div class="carousel-nav-buttons">
-                    <button class="carousel-arrow prev-arrow">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="carousel-arrow next-arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-            
+          </div>
         </div>
-        
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="mas-vendido" class="seccion seccion-oscura">
-    
-    <div class="vendido-contenedor-dorado">
-        
+    <section id="mas-vendido" class="seccion seccion-oscura">
+      <div class="vendido-contenedor-dorado">
         <h2 class="titulo-seccion">Lo Más Vendido</h2>
-        <div class="productos-grid">
-            
-            <div class="producto-card">
-                <img src="imagenes/pagina1/4.jpg" alt="Anillo de Plata">
-                <h4>Anillo Diamante</h4>
-                <p class="producto-precio">$2,450</p>
-                
-                <a href="#" 
-                   class="cta-btn producto-btn producto-btn-agregar"
-                   data-id="1" data-nombre="Anillo Diamante" 
-                   data-precio="2450" 
-                   data-clase-btn="btn-dorado">
-                    AÑADIR A CARRITO
-                </a>
-            </div>
-            <div class="producto-card">
-               <img src="imagenes/pagina1/5.jpg" alt="Collar Topacio">
-               <h4>Collar Topacio</h4>
-               <p class="producto-precio">$1,800</p>
-               
-               <a href="#" 
-                  class="cta-btn producto-btn producto-btn-agregar"
-                  data-id="2" data-nombre="Collar Topacio" 
-                  data-precio="1800" 
-                  data-clase-btn="btn-dorado">
-                   AÑADIR A CARRITO
-               </a>
-            </div>
-        
-            <div class="producto-card">
-                <img src="imagenes/pagina1/6.jpg" alt="Pendientes Perla">
-                <h4>Pendientes</h4>
-                <p class="producto-precio">$950</p>
-                
-                <a href="#" 
-                   class="cta-btn producto-btn producto-btn-agregar"
-                   data-id="3" data-nombre="Pendientes Perla" 
-                   data-precio="950" 
-                   data-clase-btn="btn-dorado">
-                    AÑADIR A CARRITO
-                </a>
-            </div>
-            <div class="producto-card">
-               <img src="imagenes/pagina1/7.jpg" alt="Brazalete de Oro">
-               <h4>Brazalete Oro</h4>
-               <p class="producto-precio">$3,500</p>
-               
-               <a href="#" 
-                  class="cta-btn producto-btn producto-btn-agregar"
-                  data-id="4" data-nombre="Brazalete de Oro" 
-                  data-precio="3500" 
-                  data-clase-btn="btn-dorado">
-                   AÑADIR A CARRITO
-               </a>
-            </div>
-    </div>
-</section>
-<footer class="seccion-negra">
-    <div class="social-links-footer">
-        <a href="https://www.facebook.com/share/1BUuaXq4yy/" target="_blank" aria-label="Facebook">📘</a>
-        <a href="https://wa.me/qr/MUEAEV7M62VQM1" target="_blank" aria-label="WhatsApp">💬</a>
-        <a href="https://www.tiktok.com/@joyas_y_accesorios_iris?_r=1&_t=ZS-91bqcvJUgFe" target="_blank" aria-label="TikTok">🎵</a>
-    </div>
-</footer>
+        <div class="productos-grid" id="productos-destacados">
+          <p
+            class="cargando-productos"
+            style="grid-column: 1/-1; text-align: center; color: #999"
+          >
+            Cargando productos destacados...
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="seccion-negra">
+      <div class="social-links-footer">
+        <a
+          href="https://www.facebook.com/share/1BUuaXq4yy/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://wa.me/qr/MUEAEV7M62VQM1"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@joyas_y_accesorios_iris?_r=1&_t=ZS-91bqcvJUgFe"
+          target="_blank"
+          aria-label="TikTok"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+      </div>
+    </footer>
 
-
-<script src="https://kit.fontawesome.com/TU_PROPIO_CODIGO.js" crossorigin="anonymous"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="main.js"></script> 
-
-<div id="carrito-sidebar" class="carrito-sidebar">
-    <div class="carrito-header">
+    <div id="carrito-sidebar" class="carrito-sidebar">
+      <div class="carrito-header">
         <h3 class="titulo-bolsita">TU BOLSITA</h3>
         <span id="cerrar-carrito" class="cerrar-btn">&times;</span>
-    </div>
+      </div>
 
-    <div id="productos-carrito" class="productos-carrito-lista">
+      <div id="productos-carrito" class="productos-carrito-lista">
         <p class="carrito-vacio-msg">El carrito está vacío.</p>
-    </div>
+      </div>
 
-    <div class="carrito-footer">
+      <div class="carrito-footer">
         <div class="total-estimado">
-            <span class="label">Total Estimado</span>
-            <span id="carrito-total">$0.00</span>
+          <span class="label">Total Estimado</span>
+          <span id="carrito-total">Bs. 0.00</span>
         </div>
-        
-        <a href="#" id="reservar-whatsapp-btn" class="cta-btn whatsapp-btn-final">
-            💬 RESERVAR POR WHATSAPP
+
+        <a
+          href="#"
+          id="reservar-whatsapp-btn"
+          class="cta-btn whatsapp-btn-final"
+        >
+          💬 RESERVAR POR WHATSAPP
         </a>
-    </div>
-<div id="carrito-sidebar" class="carrito-sidebar">
+      </div>
     </div>
 
-<div id="abrir-carrito-btn" class="carrito-flotante-btn">🛒</div>
+    <div id="notificacion-carrito" class="notificacion-carrito">
+      Producto: <strong id="prod-anadido-nombre"></strong> añadido.
+    </div>
 
-</body>
-</html>
-</body>
+    <div id="abrir-carrito-btn" class="carrito-flotante-btn">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="carrito-contador" class="carrito-contador">0</span>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

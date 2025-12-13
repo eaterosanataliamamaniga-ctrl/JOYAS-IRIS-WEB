@@ -1,0 +1,290 @@
+/* ========================================================= */
+/* PÁGINA 4 - CONTACTO */
+/* ========================================================= */
+
+/* SECCIÓN: NUESTRA HISTORIA */
+.seccion-historia {
+  padding: 120px 20px 60px;
+  background-color: var(--clr-blanco);
+  text-align: center;
+}
+
+.titulo-principal {
+  font-family: var(--font-antonio);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--clr-negro);
+  letter-spacing: 2px;
+}
+
+.historia-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--clr-blanco);
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--clr-gris-claro);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.historia-logo {
+  flex-shrink: 0;
+}
+
+.historia-logo img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background-color: var(--clr-negro);
+  padding: 20px;
+}
+
+.historia-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.historia-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* SECCIÓN: FILOSOFÍA */
+.seccion-filosofia {
+  padding: 60px 20px;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+.filosofia-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.filosofia-card {
+  background-color: var(--clr-blanco);
+  padding: 40px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--clr-dorado);
+  transition: transform 0.3s;
+}
+
+.filosofia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icono-filosofia {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.filosofia-card h3 {
+  font-family: var(--font-antonio);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--clr-negro);
+  text-transform: uppercase;
+}
+
+.filosofia-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: justify;
+}
+
+/* SECCIÓN: UBICACIÓN */
+.seccion-ubicacion {
+  padding: 60px 20px;
+  background-color: var(--clr-dorado);
+  text-align: center;
+}
+
+.seccion-ubicacion .titulo-principal {
+  color: var(--clr-negro);
+}
+
+.mapa-contenedor {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 5px solid var(--clr-blanco);
+}
+
+.mapa-contenedor iframe {
+  display: block;
+}
+
+.info-contacto {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contacto-item {
+  background-color: var(--clr-blanco);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.icono-contacto {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.contacto-item h4 {
+  font-family: var(--font-antonio);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--clr-negro);
+  text-transform: uppercase;
+}
+
+.contacto-item p {
+  margin: 2px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* SECCIÓN: FORMULARIO */
+.seccion-formulario {
+  padding: 60px 20px;
+  background-color: var(--clr-blanco);
+  text-align: center;
+}
+
+.formulario-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--clr-gris-claro);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--clr-negro);
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--clr-gris-claro);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--clr-dorado);
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--clr-verde-acento);
+  color: var(--clr-blanco);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #3d8b78;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje-respuesta {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: none;
+}
+
+.mensaje-respuesta.exito {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  display: block;
+}
+
+.mensaje-respuesta.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  display: block;
+}
+
+/* ========================================================= */
+/* RESPONSIVE */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .historia-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .historia-texto {
+    text-align: center;
+  }
+
+  .filosofia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-contacto {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

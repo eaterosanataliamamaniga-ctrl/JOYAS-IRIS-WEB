@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administración de Productos | Joyas IRIS</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="imagenes/logo.jpg"
+          alt="Logo de Joyas y Accesorios Iris"
+          class="logo-img"
+        />
+        <span class="nombre-marca">JOYAS Y ACCESORIOS IRIS - ADMIN</span>
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pagina2.html">Colecciones</a>
+        <a href="pagina3.html">Servicios</a>
+        <a href="admin.html" class="activo">Admin</a>
+      </nav>
+    </header>
+
+    <section class="admin-section">
+      <div class="admin-container">
+        <!-- Formulario para agregar productos -->
+        <div class="admin-form-container">
+          <h2>AGREGAR/EDITAR PRODUCTO</h2>
+
+          <form id="form-producto">
+            <input type="hidden" id="producto-id" />
+
+            <div class="form-group">
+              <label for="nombre">Nombre del Producto *</label>
+              <input
+                type="text"
+                id="nombre"
+                required
+                placeholder="Ej: Aretes de Esmeralda"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion">Descripción *</label>
+              <textarea
+                id="descripcion"
+                required
+                rows="4"
+                placeholder="Descripción detallada del producto..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="precio">Precio (S/) *</label>
+              <input
+                type="number"
+                id="precio"
+                step="0.01"
+                required
+                placeholder="0.00"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="categoria">Categoría *</label>
+              <select id="categoria" required>
+                <option value="">Seleccionar categoría</option>
+                <option value="vestido">Joyería para mujeres de vestido</option>
+                <option value="oficina">Joyería para mujeres de pollera</option>
+                <option value="varones">Joyería para varones</option>
+                <option value="ninos">Joyería para niños y niñas</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="stock">Stock Disponible *</label>
+              <input type="number" id="stock" required placeholder="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="material">Material</label>
+              <input
+                type="text"
+                id="material"
+                placeholder="Ej: Oro 18k, Plata 925"
+              />
+            </div>
+
+            <div class="form-group">
+              <label
+                for="destacado"
+                style="display: flex; align-items: center; gap: 10px"
+              >
+                <input
+                  type="checkbox"
+                  id="destacado"
+                  style="width: auto; margin: 0"
+                />
+                <strong>Destacar como "Más Vendido"</strong>
+              </label>
+              <small
+                style="
+                  display: block;
+                  color: #666;
+                  margin-top: 8px;
+                  margin-left: 28px;
+                "
+              >
+                Solo los primeros 4 productos marcados aparecerán en la página
+                de inicio
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="imagen">Imagen del Producto *</label>
+              <input type="file" id="imagen" accept="image/*" />
+              <div id="preview-imagen" class="preview-imagen"></div>
+            </div>
+
+            <div class="form-buttons">
+              <button type="submit" id="btn-guardar" class="btn-primary">
+                GUARDAR PRODUCTO
+              </button>
+              <button type="button" id="btn-cancelar" class="btn-secondary">
+                ✖ CANCELAR
+              </button>
+            </div>
+
+            <div id="mensaje-formulario" class="mensaje-formulario"></div>
+          </form>
+        </div>
+
+        <!-- Lista de productos existentes -->
+        <div class="admin-lista-container">
+          <h2>PRODUCTOS REGISTRADOS</h2>
+
+          <div class="filtro-categoria">
+            <label>Filtrar por categoría:</label>
+            <select id="filtro-categoria">
+              <option value="">Todas las categorías</option>
+              <option value="vestido">Mujeres de vestido</option>
+              <option value="oficina">Mujeres de pollera</option>
+              <option value="varones">Varones</option>
+              <option value="ninos">Niños y niñas</option>
+            </select>
+          </div>
+
+          <div id="lista-productos" class="lista-productos">
+            <p class="cargando">Cargando productos...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts de Firebase (solo Firestore - Storage reemplazado por Cloudinary) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <script src="firebase-config.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

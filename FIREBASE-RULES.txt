@@ -1,0 +1,121 @@
+/**
+ * REGLAS DE FIREBASE PARA JOYAS Y ACCESORIOS IRIS
+ *
+ * Copia y pega estas reglas en la consola de Firebase
+ */
+
+// ========================================================
+// FIRESTORE DATABASE RULES
+// ========================================================
+// Ve a: Firestore Database > Reglas
+// Pega este código:
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Colección de productos
+    match /productos/{producto} {
+      // Permitir lectura a todos (para mostrar en el catálogo)
+      allow read: if true;
+
+      // Permitir escritura a todos (CAMBIAR EN PRODUCCIÓN)
+      // En producción, agrega autenticación:
+      // allow write: if request.auth != null;
+      allow write: if true;
+    }
+  }
+}
+
+// ========================================================
+// FIREBASE STORAGE RULES
+// ========================================================
+// Ve a: Storage > Reglas
+// Pega este código:
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Imágenes de productos organizadas por categoría
+    match /productos/{categoria}/{filename} {
+      // Permitir lectura a todos
+      allow read: if true;
+
+      // Permitir subida a todos (CAMBIAR EN PRODUCCIÓN)
+      // Validar que sea una imagen y tamaño máximo 5MB
+      allow write: if request.resource.size < 5 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+
+      // En producción, agrega autenticación:
+      // allow write: if request.auth != null
+      //              && request.resource.size < 5 * 1024 * 1024
+      //              && request.resource.contentType.matches('image/.*');
+    }
+
+    // Otras imágenes generales
+    match /imagenes/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.resource.size < 5 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+    }
+  }
+}
+
+// ========================================================
+// REGLAS DE PRODUCCIÓN (RECOMENDADAS)
+// ========================================================
+
+/*
+
+Para producción, usa estas reglas más seguras:
+
+FIRESTORE:
+---------
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /productos/{producto} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null
+                             && request.auth.token.admin == true;
+    }
+  }
+}
+
+STORAGE:
+--------
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /productos/{categoria}/{filename} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 5 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+    }
+  }
+}
+
+*/
+
+// ========================================================
+// NOTAS IMPORTANTES
+// ========================================================
+
+/*
+
+1. Las reglas actuales permiten acceso completo para desarrollo
+2. En producción, implementa Firebase Authentication
+3. Asigna rol de "admin" a usuarios autorizados
+4. Monitorea el uso en la consola de Firebase
+5. Limita el tamaño de archivos según tu plan
+
+ÍNDICES RECOMENDADOS PARA FIRESTORE:
+- Colección: productos
+- Campos: categoria (Ascending), fechaCreacion (Descending)
+
+Firestore puede crear estos índices automáticamente cuando los necesites.
+
+*/
